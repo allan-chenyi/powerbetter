@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work - 公司名称</title>
+    <style>
+        /* 复用导航样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        header {
+            width: 100%;
+            padding: 20px 50px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo-container {
+            width: 200px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #0066cc;
+        }
+        /* 作品展示样式 */
+        .content {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 50px;
+        }
+        .content h1 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .work-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .work-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .work-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover; /* 保持图片比例，裁剪多余部分 */
+        }
+        .work-info {
+            padding: 20px;
+        }
+        .work-info h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .work-info p {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="company-logo.png" alt="公司Logo" class="logo">
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="who-we-are.html">Who We Are</a>
+            <a href="what-we-do.html">What We Do</a>
+            <a href="our-work.html" style="color: #0066cc; font-weight: bold;">Our Work</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Our Work</h1>
+        <p>我们为各行业客户打造的成功案例，每一个项目都凝聚了团队的专业与用心。</p>
+
+        <div class="work-gallery">
+            <div class="work-item">
+                <img src="work-1.jpg" alt="案例图片1" class="work-img">
+                <div class="work-info">
+                    <h3>科技公司官网重构</h3>
+                    <p>为某AI企业重新设计官网，提升品牌调性与用户转化率，访问量增长300%。</p>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="work-2.jpg" alt="案例图片2" class="work-img">
+                <div class="work-info">
+                    <h3>餐饮品牌视觉升级</h3>
+                    <p>从Logo到包装设计，为连锁餐厅打造年轻化品牌形象，门店客流增长20%。</p>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="work-3.jpg" alt="案例图片3" class="work-img">
+                <div class="work-info">
+                    <h3>电商平台搭建</h3>
+                    <p>为日用品品牌定制电商网站，集成支付与物流系统，首月销售额突破50万。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
