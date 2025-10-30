@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公司官网</title>
+    <style>
+        /* 基础样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        /* 头部导航样式 */
+        header {
+            width: 100%;
+            padding: 20px 50px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between; /* 左右布局 */
+            align-items: flex-start; /* 顶部对齐 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* 左侧Logo区域 */
+        .logo-container {
+            width: 200px; /* Logo区域宽度 */
+            height: 80px; /* Logo区域高度 */
+            border: 1px dashed #ccc; /* 虚线框提示区域，实际使用时可删除 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* 右侧导航链接 */
+        .nav-links {
+            display: flex;
+            gap: 30px; /* 链接之间的间距 */
+            margin-top: 10px; /* 与顶部保持距离 */
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #0066cc; /* hover时变色 */
+        }
+
+        /* 中间图片区域 */
+        .main-image-container {
+            width: 100%;
+            padding: 50px 100px; /* 上下左右内边距 */
+            text-align: center; /* 图片居中 */
+        }
+
+        .main-image {
+            max-width: 800px; /* 图片最大宽度 */
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部区域：包含Logo和导航 -->
+    <header>
+        <!-- 左侧Logo区域 -->
+        <div class="logo-container">
+            <!-- 此处插入公司Logo，替换src路径即可 -->
+            <img src="company-logo.png" alt="公司Logo" class="logo">
+            <!-- 如果没有Logo，可替换为文字：<h1>公司名称</h1> -->
+        </div>
+
+        <!-- 右上角导航链接 -->
+        <nav class="nav-links">
+            <a href="#who-we-are">Who We Are</a>
+            <a href="#what-we-do">What We Do</a>
+            <a href="#our-work">Our Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- 中间图片区域 -->
+    <section class="main-image-container">
+        <!-- 此处插入主图片，替换src路径即可 -->
+        <img src="main-image.jpg" alt="公司展示图" class="main-image">
+    </section>
+
+    <!-- 后续可以添加其他内容区域（根据需要扩展） -->
+    <!-- <section id="who-we-are">关于我们内容...</section> -->
+    <!-- <section id="what-we-do">业务介绍内容...</section> -->
+    <!-- <section id="our-work">作品展示内容...</section> -->
+    <!-- <section id="contact">联系方式内容...</section> -->
+</body>
+</html>
