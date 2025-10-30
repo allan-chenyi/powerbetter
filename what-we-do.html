@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who We Are - 公司名称</title>
-    <!-- 复用首页的样式（保持风格一致） -->
+    <title>What We Do - 公司名称</title>
     <style>
-        /* 复制首页的所有CSS样式，确保页面风格统一 */
+        /* 复用首页样式，保持风格统一 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
-
         body {
             min-height: 100vh;
             background-color: #f5f5f5;
         }
-
         header {
             width: 100%;
             padding: 20px 50px;
@@ -28,7 +25,6 @@
             align-items: flex-start;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-
         .logo-container {
             width: 200px;
             height: 80px;
@@ -36,18 +32,15 @@
             align-items: center;
             justify-content: center;
         }
-
         .logo {
             max-width: 100%;
             max-height: 100%;
         }
-
         .nav-links {
             display: flex;
             gap: 30px;
             margin-top: 10px;
         }
-
         .nav-links a {
             text-decoration: none;
             color: #333;
@@ -55,60 +48,73 @@
             font-weight: 500;
             transition: color 0.3s;
         }
-
         .nav-links a:hover {
             color: #0066cc;
         }
-
-        /* 新增："Who We Are"页面的内容样式 */
+        /* 内容区域样式 */
         .content {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 50px auto;
-            padding: 0 20px;
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 0 50px;
         }
-
         .content h1 {
+            margin-bottom: 30px;
             color: #333;
-            margin-bottom: 20px;
-            font-size: 28px;
         }
-
-        .content p {
-            color: #666;
-            line-height: 1.6;
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .service-item {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .service-item h3 {
             margin-bottom: 15px;
+            color: #0066cc;
         }
     </style>
 </head>
 <body>
-    <!-- 复用头部导航（保持一致性） -->
     <header>
+        <!-- 左侧Logo（与首页一致） -->
         <div class="logo-container">
-            <!-- 新增 <a> 标签，href指向首页index.html -->
-            <a href="index.html">
-                <img src="company-logo.png" alt="公司Logo" class="logo">
-            </a>
+            <img src="company-logo.png" alt="公司Logo" class="logo">
         </div>
 
+        <!-- 导航链接（所有页面保持一致，当前页面可加粗突出） -->
         <nav class="nav-links">
-            <a href="index.html">Home</a> <!-- 新增：返回首页的链接 -->
-            <a href="who-we-are.html" style="color: #0066cc;">Who We Are</a> <!-- 当前页面高亮 -->
-            <a href="what-we-do.html">What We Do</a>
+            <a href="index.html">Home</a>
+            <a href="who-we-are.html">Who We Are</a>
+            <a href="what-we-do.html" style="color: #0066cc; font-weight: bold;">What We Do</a>
             <a href="our-work.html">Our Work</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- "Who We Are"页面的内容 -->
+    <!-- 内容区域 -->
     <section class="content">
-        <h1>Who We Are</h1>
-        <p>我们是一家专注于[公司业务，如：品牌设计、技术开发、市场推广]的小型企业，成立于[年份]。</p>
-        <p>我们的团队由[人数]名经验丰富的专业人士组成，致力于为客户提供[核心价值，如：高效、创新、可靠]的解决方案。</p>
-        <p>多年来，我们始终坚持[公司理念，如：客户至上、品质第一]，已为[客户数量]家企业提供了优质服务。</p>
+        <h1>What We Do</h1>
+        <p>我们专注于为中小企业提供定制化解决方案，助力业务增长与数字化转型。</p>
+
+        <div class="service-list">
+            <div class="service-item">
+                <h3>品牌设计</h3>
+                <p>从Logo设计到品牌视觉体系搭建，帮助企业塑造独特的品牌形象，提升市场辨识度。</p>
+            </div>
+            <div class="service-item">
+                <h3>网站开发</h3>
+                <p>定制响应式企业官网、电商平台及展示型网站，适配各种设备，提升用户体验。</p>
+            </div>
+            <div class="service-item">
+                <h3>营销策划</h3>
+                <p>结合市场需求与企业优势，提供线上线下整合营销方案，扩大品牌影响力。</p>
+            </div>
+        </div>
     </section>
 </body>
 </html>
